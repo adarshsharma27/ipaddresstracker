@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: 'Rubik', sans-serif;
+
+
+}
+h2{
+  color: #fff;
+}
+.bg-image{
+  background-image: url('../public/bg.png');
+  object-fit: cover;
+  position: relative;
+  height: 18rem;
+}
+.form-control {
+  font-size: 1.2rem;
+  padding: 8px;
+  text-transform: capitalize;
+  border: 1px solid #132637;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 1px rgb(0 0 0 / 10%);
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  background-color: #fff;
+  
+}
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: transparent !important;
+  box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 10%);
+}
+
+.form-container {
+  position: relative;
+}
+
+.fa-chevron-right {
+  font-size: 15px;
+  color: #fff !important;
+  border: 1px solid #000;
+  outline: none;
+  background-color: #000;
+  border-color: #000;
+  height: 95%;
+  width: 50px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0px 5px 5px 0px;
+}
+
+
+.complete-data .container{
+  position: absolute;
+    bottom:-4.5rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    border-radius:0.5rem;
+}
+
+.content{
+  text-align:left;
+  padding: 0px 20px;
+}
+
+.content h3{
+  font-size: 1rem;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+.content p{
+  font-size: 1.3rem;
+  color: #000;
+  font-weight: 600;
+
+}
+@media (max-width: 596px) {
+  .w-50 {
+      width: 80% !important;
+  }
+  .complete-data .container{
+    width: 70%;
+    top: 10rem;
+    bottom: auto;
+
+  }
+  .content p{
+    font-size: 1.2rem;
+  }
+}
